@@ -12,6 +12,10 @@
 - Slot
 - Jackpot
 
+<img width="1585" height="935" alt="image" src="https://github.com/user-attachments/assets/9b7224ea-447c-417c-92df-49f7b3142151" />
+
+
+
 ## Blockchain Integration
 
 BNB, Solana, Sui integration 
