@@ -34,4 +34,4 @@ Solana, Polygon, BNB integration
     - Level enchanging
 ## Contact
 - [telegram](https://t.me/roswellecho)
-- [twitter](https://x.com/roswellecho)
+- [twitter](https://x.com/roswellyecho)
