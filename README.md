@@ -18,7 +18,7 @@
 
 ## Blockchain Integration
 
-BNB, Solana, Sui integration 
+Solana, Polygon, BNB integration 
 
 ## Conducted New Gaming Model
     
