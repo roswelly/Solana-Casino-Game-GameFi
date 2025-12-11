@@ -1,4 +1,4 @@
-# Web3 gaming - GameFi
+# Solana Casino Games - GameFi
 
 ## Games
 - Baccarat
