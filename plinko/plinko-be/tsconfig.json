@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"lib": ["es5", "es6", "es2017", "es2020", "dom"],
+		"target": "es2020",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "./dist",
+		"rootDir": "src",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"strict": false,
+		"esModuleInterop": true,
+		"noImplicitAny": true,
+		"downlevelIteration": true,
+		"skipLibCheck": true,
+		"types": ["node"],
+		"typeRoots": [
+			"./src/@types/*",
+			"./node_modules/@types"
+		]
+	},
+	"ts-node": {
+		"files": true
+	},
+	"include": [
+		"src/**/*"
+	]
+}

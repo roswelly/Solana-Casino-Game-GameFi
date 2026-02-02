@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #f1f1f1; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .x-game-panel{
+    margin-top: -50px;
+    margin-left: 0;
+    transform: scale(0.8);
+  }
+
+  .x-bet-action{
+    margin-top: -70px;
+
+    .x-half-btn{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .x-double-btn{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .x-page{
+    padding-bottom: -50px;
+  }
+}
+
+@media (max-width: 639px) {
+  .x-game-panel{
+    margin-top: -80px;
+    margin-left: 0px;
+    transform: scale(0.7);
+  }
+
+  .x-bet-action{
+    margin-top: -90px;
+    margin-left: 0px;
+  }
+
+  .x-betStatus{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 579px) {
+  .x-multiplier{
+    right: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .x-game-panel{
+    margin-top: -100px;
+    transform: scale(0.65);
+  }
+  
+  .x-bet-action{
+    margin-top: -120px;
+    transform: scale(0.85);
+  }
+
+  .x-betStatus{
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .x-game-panel{
+    margin-top: -100px;
+    transform: scale(0.6);
+  }
+
+  .x-multiplier{
+    right: 20px;
+  }
+
+  .x-betStatus{
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .x-bet-action{
+    margin-top: -150px;
+    transform: scale(0.8);
+  }
+}

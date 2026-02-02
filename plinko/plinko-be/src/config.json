@@ -1,0 +1,9 @@
+{
+    "development": false,
+    "port": 5007,
+    "database": "plinko",
+    "orderURL":"http://annie.ihk.vipnps.vip/iGaming/igaming/orders",
+    "getUserInfoURL":"http://annie.ihk.vipnps.vip/iGaming/igaming/getUserToken",
+    "getBalanceURL":"http://annie.ihk.vipnps.vip/iGaming/igaming/debit",
+    "reFundURL":"http://annie.ihk.vipnps.vip/iGaming/igaming/credit"
+}
