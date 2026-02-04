@@ -1,0 +1,24 @@
+.pagination-container {
+  @apply flex flex-col sm:flex-row justify-center items-center sm:justify-between gap-[20px] py-[20px];
+  .display-count {
+    @apply flex flex-col 2xs:flex-row justify-center items-center gap-[12px];
+  }
+  .display-direction {
+    @apply flex flex-col 2xs:flex-row justify-center items-center gap-[20px];
+    >div {
+      @apply flex gap-[15px];
+      >button {
+        @apply flex justify-center items-center w-[30px] h-[30px] rounded-full drop-shadow-lg;
+      }
+    }
+  }
+  p {
+    @apply text-white text-[16px] font-[600] whitespace-nowrap;
+  }
+  .enable {
+    @apply bg-[#2c3b54] text-white border-[1px] border-[#0094ff]/[0.5] rounded-full cursor-pointer;
+  }
+  .disable {
+    @apply bg-[#2c3b54] text-white rounded-full;
+  }
+}

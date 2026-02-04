@@ -1,0 +1,16 @@
+{
+    "development": false,
+    "debug": true,
+    "appKey": "pink-0.1.0",
+    "port": 5000,
+    "database": "mine-230524",
+    "secret": "168oB5fw4NquEJeR9c1kqvosUeAwVAgh",
+    "betting": {
+        "min": 0.1,
+        "max": 100
+    },
+    "getUserInfoURL":"",
+    "getBalanceURL":"",
+    "reFundURL":"",
+    "orderURL":""
+}

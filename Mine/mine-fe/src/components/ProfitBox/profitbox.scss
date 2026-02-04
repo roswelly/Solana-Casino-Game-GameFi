@@ -1,0 +1,87 @@
+.history-item {
+    @apply flex justify-center items-center w-full relative;
+    > div {
+        @apply flex justify-center items-center w-full h-full;
+        transition: transform .5s linear;
+        > span {
+            text-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, .35);
+            @apply text-[0.6em] text-center font-[700];
+        }
+    }
+    ._active {
+        @apply rounded-[0.75em];
+        > span {
+            color: #000;
+        }
+        &:before {
+            content: "";
+            width: calc(100% + 0.5em);
+            height: calc(100% + 0.5em);
+            border-width: 0.0625em;
+            border-style: solid;
+            border-radius: 1.25em;
+            animation: opacity1 2s linear .15s infinite reverse;
+            position: absolute;
+            top: -0.25em;
+            left: -0.25em;
+            @keyframes opacity1 {
+                0% {
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 0.15;
+                }
+                20% {
+                    opacity: 0.35;
+                }
+                50% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+        &:after {
+            content: "";
+            width: calc(100% + 0.25em);
+            height: calc(100% + 0.25em);
+            border-width: 0.0625em;
+            border-style: solid;
+            border-radius: 1.25em;
+            animation: opacity2 2s linear infinite reverse;
+            position: absolute;
+            top: -0.125em;
+            left: -0.125em;
+            @keyframes opacity2 {
+                0% {
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 0.35;
+                }
+                20% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                80% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    ._win1 {
+        @apply bg-blue before:border-blue after:border-blue;
+    }
+    ._win2 {
+        @apply bg-green before:border-green after:border-green;
+    }
+    ._win3 {
+        @apply bg-yellow before:border-yellow after:border-yellow;
+    }
+}

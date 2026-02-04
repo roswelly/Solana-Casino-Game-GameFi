@@ -1,0 +1,81 @@
+.table-container {
+  @apply hidden sm:block overflow-x-auto rounded-t-[14px] shadow-lg relative;
+  .table {
+    @apply w-full overflow-x-auto;
+    .thead {
+      @apply rounded-t-[14px] drop-shadow-lg w-full;
+      .tr-group {
+        @apply flex bg-[#2c3b54] py-[18px];
+        .th-item {
+          @apply flex items-center mx-[20px] md:mx-[30px] text-[14px] lg:text-[16px] text-white font-[600] whitespace-nowrap;
+        }
+      }
+    }
+    .tbody {
+      @apply overflow-auto;
+      .tr-group {
+        @apply flex bg-[#EBF5FF] py-[10px] cursor-pointer;
+        .td-item {
+          @apply flex items-center mx-[20px] md:mx-[30px] text-[13px] md:text-[15px] text-white font-[400];
+        }
+      }
+      .tr-group:nth-child(odd) {
+        @apply bg-[#02509B]/[0.2];
+      }
+      .tr-group:nth-child(even) {
+        @apply bg-[#02509B]/[0.1];
+      }
+      .tr-group:hover, .tr-group:active {
+        @apply bg-[#02509B]/[0.3];
+      }
+      button {
+        @apply text-white text-[16px] font-[500] rounded-[30px] h-[30px] min-w-[124px];
+      }
+      .edit-group {
+        @apply flex justify-center gap-[4px] lg:gap-[10px] pr-[20px];
+        >div {
+          @apply flex justify-center items-center bg-white rounded-full w-[34px] h-[34px] cursor-pointer;
+          &:hover {
+            @apply bg-[#02509B]/[0.2];
+          }
+        }
+      }
+    }
+  }
+}
+.mobile-table-container {
+  @apply block sm:hidden;
+  .mobile-table {
+    .mobile-tr-group {
+      @apply flex flex-col gap-[10px] bg-[#2c3b54] my-[20px]
+      border-b-[2px] rounded-t-[15px] border-[#02509B]/[0.5] p-[20px] shadow-lg;
+      .mobile-td-item {
+        @apply flex flex-wrap gap-[15px] text-white/[0.8] text-[14px];
+        label {
+          @apply text-white font-[600];
+        }
+        p {
+          @apply text-white font-[400] whitespace-normal;
+        }
+        button {
+          @apply text-white text-[16px] font-[500] rounded-[30px] h-[40px] w-full;
+        }
+        .edit-group {
+          @apply flex justify-center gap-[4px] lg:gap-[10px];
+          >div {
+            @apply flex justify-center items-center bg-white rounded-full w-[34px] h-[34px] cursor-pointer;
+            &:hover {
+              @apply bg-[#02509B]/[0.3];
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pagination {
+  @apply mx-[20px];
+  .borderline {
+    @apply border-b-[1px] border-[#2c3b54] mt-[30px] drop-shadow-lg;
+  }
+}

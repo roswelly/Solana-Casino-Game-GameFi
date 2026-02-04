@@ -1,0 +1,12 @@
+.modal {
+  @apply flex justify-center items-center fixed w-[100vw] h-[100vh] left-0 top-0 z-[10];
+  .overly {
+    @apply fixed inset-0 bg-black bg-opacity-50 transition-opacity;
+  }
+  .modal-container {
+    @apply absolute z-[20];
+    .modal-main {
+
+    }
+  }
+}

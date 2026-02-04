@@ -1,0 +1,28 @@
+.dropdown {
+  @apply flex flex-col justify-center gap-[10px] bg-[#2c3b54] border-[1px] border-[#0094ff]/[0.5] rounded-full px-[25px] h-full
+  text-white text-[12px] xs:text-[14px] md:text-[16px] font-[400] cursor-pointer drop-shadow-lg;
+  .drop-icon {
+    @apply flex items-center absolute right-[25px] text-white;
+    .down-rotate {
+      @apply rotate-0 transition-all duration-[0.3];
+    }
+    .up-rotate {
+      @apply -rotate-180 transition-all duration-[0.3];
+    }
+  }
+  .menu-panel {
+    @apply absolute rounded-[20px] top-[110%] left-0 overflow-hidden w-full;
+    .menu-group {
+      @apply overflow-y-auto max-h-[300px];
+      .item {
+        @apply w-full bg-[#2c3b54] py-[10px] px-[25px] text-white transition-all duration-[0.3];
+        &:hover {
+          @apply bg-[#0094ff] text-white;
+        }
+      }
+    }
+  }
+  &:hover {
+    @apply border-[#0094ff];
+  }
+}
